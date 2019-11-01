@@ -100,6 +100,6 @@ class CityListTest {
         cityList.add(new City("Regina", "Saskatchewan"));
         cityList.add(new City("Victoria", "British Columbia"));
         cityList.add(new City("Charlottetown", "Prince Edward Island"));
-        assertEquals(2, cityList.HalfCitySize());
+        assertEquals(2, cityList.halfCitySize());
     }
 }
