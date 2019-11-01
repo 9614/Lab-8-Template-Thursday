@@ -93,4 +93,13 @@ class CityListTest {
 
         assertEquals(1, cityList.countCities());
     }
+    
+    @Test
+    void testHalfCitySize() {
+        CityList cityList = mockCityList();
+        cityList.add(new City("Regina", "Saskatchewan"));
+        cityList.add(new City("Victoria", "British Columbia"));
+        cityList.add(new City("Charlottetown", "Prince Edward Island"));
+        assertEquals(2, cityList.halfCitySize());
+    }
 }
